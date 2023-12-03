@@ -1,0 +1,27 @@
+.cube{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+    animation: cube-running 4000ms infinite ;
+}
+@keyframes cube-running{
+    0%{
+        background-color: red;
+    }
+    25%{
+        transform: translatey(400px);
+        background-color: blue;
+    }
+    50%{
+        transform: translate(400px ,400px);
+        background-color: green;
+    }
+    75%{
+        transform: translate(400px, 0);
+        background-color: yellow;
+    }
+    100%{
+        background-color: red;
+    }
+}
